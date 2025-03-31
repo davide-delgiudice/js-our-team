@@ -41,3 +41,8 @@ const teamMembers = [
 const createMemberCard = (member) => {
   console.log(member);
 }
+
+// ciclo l'array di oggetti per inserire uno ad uno i membri
+for (let i=0; i<teamMembers.length; i++){
+  createMemberCard(teamMembers[i]);
+}
