@@ -44,7 +44,7 @@ const createMemberCard = (member) => {
   const card = `<div class="col">
                 <div class="team-card bg-dark d-flex">
                     <div class="card-image">
-                        <img src="${member.img}" alt="" class="img-fluid">
+                        <img src="./img/${member.img}" alt="" class="img-fluid">
                     </div>
                     <div class="card-body py-2 px-3">
                         <h3 class="card-title text-light fs-5 mb-2">${member.name}</h4>
@@ -53,7 +53,7 @@ const createMemberCard = (member) => {
                     </div>
                 </div>
             </div>`;
-            
+
   console.log(card)
 }
 
