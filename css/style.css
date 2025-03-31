@@ -4,6 +4,10 @@ h2{
     font-weight: 800;
 }
 
+div .team-card{
+    background-color: black;
+}
+
 a{
     text-decoration: none;
     color: aqua;

@@ -41,14 +41,14 @@ const teamMembers = [
 const createMemberCard = (member) => {
 
   // aggiungiamo ad una nuova variabile il codice della singola card scritta in HTML
-  const card = `<div class="col-12 col-md-6 col-lg-4">
-                <div class="team-card bg-dark d-flex">
+  const card = `<div class="col-12 col-md-6 col-lg-4 gy-4">
+                <div class="team-card d-flex">
                     <div class="card-image">
-                        <img src="${member.img}" alt="" class="img-fluid">
+                        <img src="${member.img}" class="img-fluid" width="100px" alt="">
                     </div>
-                    <div class="card-body py-2 px-3">
-                        <h3 class="card-title text-light fs-5 mb-2">${member.name}</h4>
-                        <h4 class="card-subtitle text-light fs-6 mb-3">${member.role}</h4>
+                    <div class="card-body ps-2">
+                        <h3 class="card-title text-light fs-5 py-1">${member.name}</h4>
+                        <h4 class="card-subtitle text-light fs-6 pb-2">${member.role}</h4>
                         <a href="#">${member.email}</a>
                     </div>
                 </div>
