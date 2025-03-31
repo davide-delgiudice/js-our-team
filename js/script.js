@@ -39,7 +39,21 @@ const teamMembers = [
 
 // creiamo una funzione che ci permetta di aggiungere i membri del team nel DOM
 const createMemberCard = (member) => {
-  console.log(member);
+
+  // aggiungiamo ad una nuova variabile il codice della singola card scritta in HTML
+  const card = `<div class="col">
+                <div class="team-card bg-dark d-flex">
+                    <div class="card-image">
+                        <img src="./img/male1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body py-2 px-3">
+                        <h3 class="card-title text-light fs-5 mb-2">MARCO BIANCHI</h4>
+                        <h4 class="card-subtitle text-light fs-6 mb-3">Designer</h4>
+                        <a href="#">marcobianchi@team.com</a>
+                    </div>
+                </div>
+            </div>`;
+
 }
 
 // ciclo l'array di oggetti per inserire uno ad uno i membri
