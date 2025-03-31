@@ -41,10 +41,10 @@ const teamMembers = [
 const createMemberCard = (member) => {
 
   // aggiungiamo ad una nuova variabile il codice della singola card scritta in HTML
-  const card = `<div class="col">
+  const card = `<div class="col-12 col-md-6 col-lg-4">
                 <div class="team-card bg-dark d-flex">
                     <div class="card-image">
-                        <img src="./img/${member.img}" alt="" class="img-fluid">
+                        <img src="${member.img}" alt="" class="img-fluid">
                     </div>
                     <div class="card-body py-2 px-3">
                         <h3 class="card-title text-light fs-5 mb-2">${member.name}</h4>
@@ -53,8 +53,9 @@ const createMemberCard = (member) => {
                     </div>
                 </div>
             </div>`;
-
-  console.log(card)
+  
+  // prendo dal DOM l'ID team-members per concatenare le varie card
+  document.getElementById('team-members').innerHTML += card;
 }
 
 // ciclo l'array di oggetti per inserire uno ad uno i membri
