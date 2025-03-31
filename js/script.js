@@ -44,16 +44,17 @@ const createMemberCard = (member) => {
   const card = `<div class="col">
                 <div class="team-card bg-dark d-flex">
                     <div class="card-image">
-                        <img src="./img/male1.png" alt="" class="img-fluid">
+                        <img src="${member.img}" alt="" class="img-fluid">
                     </div>
                     <div class="card-body py-2 px-3">
-                        <h3 class="card-title text-light fs-5 mb-2">MARCO BIANCHI</h4>
-                        <h4 class="card-subtitle text-light fs-6 mb-3">Designer</h4>
-                        <a href="#">marcobianchi@team.com</a>
+                        <h3 class="card-title text-light fs-5 mb-2">${member.name}</h4>
+                        <h4 class="card-subtitle text-light fs-6 mb-3">${member.role}</h4>
+                        <a href="#">${member.email}</a>
                     </div>
                 </div>
             </div>`;
-
+            
+  console.log(card)
 }
 
 // ciclo l'array di oggetti per inserire uno ad uno i membri
