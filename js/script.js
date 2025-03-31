@@ -36,3 +36,8 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// creiamo una funzione che ci permetta di aggiungere i membri del team nel DOM
+const createMemberCard = (member) => {
+  console.log(member);
+}
